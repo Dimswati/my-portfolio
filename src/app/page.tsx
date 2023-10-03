@@ -30,6 +30,13 @@ import Menu from "@/components/Menu";
 import Link from "next/link"
 import NavBar from "@/components/NavBar";
 
+import paulEdited from '../../public/paulEdited.png'
+import jjwelding from '../../public/jjwelding.png'
+import architect from '../../public/architect.png'
+import paulport from '../../public/architect.png'
+
+import Image from "next/image";
+
 export default function Home() {
   return (
     <>
@@ -74,10 +81,10 @@ export default function Home() {
         <NavBar />
         <section id="home" className="bg-fuchsia-100/20">
           <div className="container flex flex-col-reverse md:flex-row justify-center items-center gap-x-16 gap-y-16">
-            <img
-              src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/home-banner.jpg"
-              className="aspect-square w-96 h-96 rounded-3xl"
-              alt=""
+            <Image
+              src={paulEdited}
+              className="aspect-square w-96 h-96 rounded-3xl object-cover object-center"
+              alt="main Image"
             />
             <div className="md:text-left text-center">
               <h5 className="text-xl mb-4 text-neutral-800 font-medium">
@@ -85,9 +92,9 @@ export default function Home() {
               </h5>
               <h1 className="mb:text-6xl text-4xl mb-4 font-bold text-neutral-800 antialiased">
                 Paul{" "}
-                <img
-                  className="inline w-16 h-16 object-cover rounded-full"
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/mask.jpg"
+                <Image
+                  className="inline w-16 h-16 object-cover object-center rounded-full"
+                  src={paulEdited}
                   alt="pauls profile"
                 />{" "}
                 Mbatia
@@ -95,9 +102,8 @@ export default function Home() {
               <h2 className="text-2xl text-neutral-800 font-medium mb-6">
                 <TypedWord />
               </h2>
-              <p className="text-base text-neutral-600 font-normal mb-8">
-                We work with professionals and leaders who want to build careers
-                that fulfil them intellectually, financially
+              <p className="text-lg text-neutral-600 font-normal mb-8">
+              I specialize in harnessing the capabilities of React.js and Next.js to build dynamic, responsive, and high-performance web applications
               </p>
               <button className="primary-btn">
                 Download cv <BsDownload className="inline" />
@@ -111,114 +117,27 @@ export default function Home() {
               <h3 className="uppercase relative text-xl font-semibold antialiased tracking-widest text-neutral-900 before:absolute before:w-[8px] before:h-[8px] before:bg-fuchsia-400 before:top-[10px] before:left-[0px] pl-6 mb-6">
                 about me
               </h3>
-              <div className="pb-14 pr-6 border-b border-neutral-300 mb-12">
+              <div className="pb-14 pr-6">
                 <h4 className="uppercase text-base font-semibold text-neutral-900 mb-2">
                   my name is paul mbatia
                 </h4>
                 <h2 className="uppercase text-3xl font-semibold text-neutral-800 mb-7">
                   I AM AVAILABLE FOR UI UX DESIGN PROJECTS
                 </h2>
-                <p className="text-base text-neutral-700 mb-6">
-                  Born in 2000, AB type living in USA. We provide on-screen
-                  design for websites and apps, as well as front-end
-                  implementation. We will continue to pursue a wide range of
-                  expressions and better code by pursuing our “likes”.
+                <p className="text-xl text-neutral-700 ">
+                  I am a skilled frontend developer based in Kenya with a rich background in React.js and Next.js. With two years of hands-on experience, I have honed my expertise in crafting engaging and responsive user interfaces. My proficiency extends to leveraging the power of React.js to build dynamic and scalable web applications, while Next.js enables me to develop seamless and performant projects. I bring a keen eye for design and a commitment to creating user-friendly experiences. I am passionate about staying current with the latest industry trends and technologies, ensuring that I deliver cutting-edge solutions. As a developer, I thrive on collaborative projects and am dedicated to continuously enhancing my skills to contribute effectively to the ever-evolving field of frontend development.
                 </p>
-                <div className="flex gap-6 items-center">
-                  <div className="flex gap-3">
-                    <h1 className="sm:text-5xl text-4xl font-semibold text-neutral-900">
-                      5K
-                    </h1>
-                    <p>
-                      Projects <br /> Completed
-                    </p>
-                  </div>
-                  <div className="flex gap-3">
-                    <h1 className="sm:text-5xl text-4xl font-semibold text-neutral-900">
-                      3K
-                    </h1>
-                    <p>
-                      Satisfied <br /> Clients
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <h3 className="uppercase relative text-xl font-semibold antialiased tracking-widest text-neutral-900 before:absolute before:w-[8px] before:h-[8px] before:bg-fuchsia-400 before:top-[10px] before:left-[0px] pl-6 mb-6 ">
-                experience
-              </h3>
-              <div className="flex flex-col gap-5">
-                <div className="bg-white p-4 border-2 border-fuchsia-200 rounded-xl flex gap-4">
-                  <div className="bg-fuchsia-900 text-fuchsia-100 p-2.5 rounded-full w-fit h-fit">
-                    <BsFillBriefcaseFill size={20} className="box-conten" />
-                  </div>
-                  <div>
-                    <span className="text-xs text-neutral-700">
-                      2019 - Present
-                    </span>
-                    <h2 className="text-lg font-semibold mb-2">
-                      Art Director - Facebook Inc
-                    </h2>
-                    <p className="text-neutral-700">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-white p-4 border-2 border-fuchsia-200 rounded-xl flex gap-4">
-                  <div className="bg-fuchsia-900 text-fuchsia-100 p-2.5 rounded-full w-fit h-fit">
-                    <BsFillBriefcaseFill size={20} className="box-conten" />
-                  </div>
-                  <div>
-                    <span className="text-xs text-neutral-700">
-                      2019 - Present
-                    </span>
-                    <h2 className="text-lg font-semibold mb-2">
-                      Art Director - Facebook Inc
-                    </h2>
-                    <p className="text-neutral-700">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-white p-4 border-2 border-fuchsia-200 rounded-xl flex gap-4">
-                  <div className="bg-fuchsia-900 text-fuchsia-100 p-2.5 rounded-full w-fit h-fit">
-                    <BsFillBriefcaseFill size={20} className="box-content" />
-                  </div>
-                  <div>
-                    <span className="text-xs text-neutral-700">
-                      2019 - Present
-                    </span>
-                    <h2 className="text-lg font-semibold mb-2">
-                      Art Director - Facebook Inc
-                    </h2>
-                    <p className="text-neutral-700">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.
-                    </p>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="lg:basis-7/12 basis-full sticky top-0">
               <div className="flex gap-6 pt-6 mb-12 sm:flex-row flex-col">
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/about-banner.jpg"
+                <Image
+                  src={paulEdited}
                   className="sm:basis-7/12 basis-full h-80 min-w-0 rounded-2xl object-cover"
-                  alt=""
+                  alt="paul Image"
                 />
                 <div className="sm:basis-5/12 basis-full flex flex-col gap-4 w-full">
-                  <div className="flex items-center gap-5 bg-white py-3 pl-4 border-2 border-fuchsia-200 rounded-xl w-full hover:bg-fuchsia-200 transition-all duration-300 hover:cursor-pointer">
-                    <div className="bg-fuchsia-100 p-2.5 rounded-3xl ">
-                      <FaSkype size={20} />
-                    </div>
-                    <span className="font-medium text-neutral-700">
-                      Skype me
-                    </span>
-                  </div>
+                  
                   <div className="flex items-center gap-5 bg-white py-3 pl-4 border-2 border-fuchsia-200 rounded-xl w-full hover:bg-fuchsia-200 transition-all duration-300 hover:cursor-pointer">
                     <div className="bg-fuchsia-100 p-2.5 rounded-3xl ">
                       <FaEnvelope size={20} />
@@ -241,12 +160,7 @@ export default function Home() {
                     </div>
                     <span className="font-medium text-neutral-700">Resume</span>
                   </div>
-                  <div className="flex items-center gap-5 bg-white py-3 pl-4 border-2 border-fuchsia-200 rounded-xl w-full hover:bg-fuchsia-200 transition-all duration-300 hover:cursor-pointer">
-                    <div className="bg-fuchsia-100 p-2.5 rounded-3xl ">
-                      <FaFilePdf size={20} />
-                    </div>
-                    <span className="font-medium text-neutral-700">Resume</span>
-                  </div>
+                  
                 </div>
               </div>
               <div>
@@ -380,11 +294,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  Mobile-First Development
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Design and develop with a mobile-first approach to ensure a smooth experience on smartphones and tablets.
                 </p>
               </div>
               <div className="service-card group">
@@ -396,11 +309,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  HTML5/CSS3 Development
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Write clean, semantic HTML and CSS code to structure and style web content.
                 </p>
               </div>
               <div className="service-card group">
@@ -412,11 +324,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  User Interface (UI) Design
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Create visually appealing and intuitive interfaces for websites and applications.
                 </p>
               </div>
               <div className="service-card group">
@@ -428,11 +339,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  JavaScript Development
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Implement interactive and dynamic elements using JavaScript, and popular frameworks/libraries like React.
                 </p>
               </div>
               <div className="service-card group">
@@ -444,11 +354,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  Web Animation
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Integrate animations and transitions to enhance user engagement and make the interface more dynamic.
                 </p>
               </div>
               <div className="service-card group">
@@ -460,11 +369,10 @@ export default function Home() {
                   <span className="absolute inset-0 bg-fuchsia-200 rounded-xl z-20 rotate-12 origin-bottom-right group-hover:rotate-0 transition-all ease-in duration-300"></span>
                 </div>
                 <h2 className="text-xl font-medium text-neutral-900 mb-2">
-                  Web Design
+                  Performance Optimization
                 </h2>
                 <p className="text-neutral-800  text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Optimize frontend code and assets to improve website/application loading times.
                 </p>
               </div>
             </div>
@@ -473,71 +381,70 @@ export default function Home() {
         <section id="portfolio" className="bg-fuchsia-100">
           <div className="container">
             <h1 className="relative uppercase font-semibold text-4xl antialiased text-black before:absolute before:w-14 before:h-[3px] before:-bottom-3 before:bg-fuchsia-300 mb-14">
-              my services
+              my projects
             </h1>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 transition-all duration-300 gap-6">
               <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
                 <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
                   <BsPlus size={24} />
                 </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-1.jpg"
+                <Image
+                  src={jjwelding}
                   alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
+                  className="w-full h-72 rounded-xl object-cover object-center"
                 />
                 <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
                   <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
+                    <h5 className=" font-medium mb-1">Welder Website design</h5>
                     <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
+                      Nextjs, Wordpress
                     </p>
                   </div>
-                  <div
-                    className="p-1.5 bg-fuchsia-300 h-fit rounded-full
-                                  "
+                  <a href="https://james-portfolio-buaeabimc-dimswati.vercel.app/" target="_blank"
+                    className="p-1.5 bg-fuchsia-300 h-fit rounded-full"
                   >
                     <BsArrowUpRightCircle />
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
                 <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
                   <BsPlus size={24} />
                 </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-2.jpg"
+                <Image
+                  src={architect}
                   alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
+                  className="h-72 rounded-xl w-full object-cover object-center"
                 />
                 <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
                   <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
+                    <h5 className=" font-medium mb-1">Architect Design</h5>
                     <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
+                      Wordpress, ReactJs
                     </p>
                   </div>
-                  <div
+                  <a href="https://architect-qda1o1n1x-dimswati.vercel.app/" target="_blank"
                     className="p-1.5 bg-fuchsia-300 h-fit rounded-full
                                   "
                   >
                     <BsArrowUpRightCircle />
-                  </div>
+                  </a>
                 </div>
               </div>
               <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
                 <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
                   <BsPlus size={24} />
                 </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-3.jpg"
+                <Image
+                  src={paulEdited}
                   alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
+                  className="w-full h-72 rounded-xl object-cover object-center"
                 />
                 <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
                   <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
+                    <h5 className=" font-medium mb-1">Personal Portfolio</h5>
                     <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
+                      NextJs, Tailwind CSS
                     </p>
                   </div>
                   <div
@@ -548,89 +455,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
-                <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
-                  <BsPlus size={24} />
-                </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-4.jpg"
-                  alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
-                />
-                <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
-                  <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
-                    <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
-                    </p>
-                  </div>
-                  <div
-                    className="p-1.5 bg-fuchsia-300 h-fit rounded-full
-                                  "
-                  >
-                    <BsArrowUpRightCircle />
-                  </div>
-                </div>
-              </div>
-              <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
-                <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
-                  <BsPlus size={24} />
-                </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-5.jpg"
-                  alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
-                />
-                <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
-                  <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
-                    <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
-                    </p>
-                  </div>
-                  <div
-                    className="p-1.5 bg-fuchsia-300 h-fit rounded-full
-                                  "
-                  >
-                    <BsArrowUpRightCircle />
-                  </div>
-                </div>
-              </div>
-              <div className="relative rounded-xl bg-white border-2 border-fuchsia-200 p-2.5 transition-all duration-300 group overflow-hidden">
-                <div className="p-2 bg-fuchsia-300 absolute top-5 right-5 rounded-full">
-                  <BsPlus size={24} />
-                </div>
-                <img
-                  src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/project-6.jpg"
-                  alt="portfolioOne"
-                  className=" rounded-xl object-cover object-center"
-                />
-                <div className="absolute bottom-0 right-0 left-0 mx-5 p-5 bg-fuchsia-100 rounded-xl flex justify-between transition-all ease-linear duration-300 opacity-0 group-hover:opacity-100 group-hover:-translate-y-5">
-                  <div>
-                    <h5 className=" font-medium mb-1">Mobile App Design</h5>
-                    <p className="text-sm text-neutral-800">
-                      Mobile App, App Design
-                    </p>
-                  </div>
-                  <div
-                    className="p-1.5 bg-fuchsia-300 h-fit rounded-full
-                                  "
-                  >
-                    <BsArrowUpRightCircle />
-                  </div>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>
-        {/* <section id="testimonials" className="bg-fuchsia-100/20">
-          <div className="container">
-            <h1 className="relative uppercase font-semibold text-4xl antialiased text-black before:absolute before:w-14 before:h-[3px] before:-bottom-3 before:bg-fuchsia-300 mb-14">
-              testimonials
-            </h1>
-            <Testimonials />
-          </div>
-        </section> */}
+        
         <section id="contact" className="bg-fuchsia-100">
           <div className="container">
             <div className="flex lg:flex-row flex-col gap-12">
@@ -644,12 +473,12 @@ export default function Home() {
                       <BsFillChatLeftDotsFill size={20} />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold">Chat to us</h4>
+                      <h4 className="text-lg font-bold">Email me</h4>
                       <p className="text-base text-neutral-800">
-                        Our friendly team is there to help.
+                        I will look forward to read your email
                       </p>
                       <span className="text-base text-neutral-700 font-semibold cursor-pointer">
-                        info@domainname.com
+                        paulmacharia@proton.me
                       </span>
                     </div>
                   </div>
@@ -658,15 +487,10 @@ export default function Home() {
                       <BsCompass size={20} />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold">Chat to us</h4>
+                      <h4 className="text-lg font-bold">Location</h4>
                       <p className="text-base text-neutral-800">
-                        Come say hello at our office HQ.
+                        Eldoret, Kenya
                       </p>
-                      <span className="text-base text-neutral-700 font-semibold cursor-pointer">
-                        Warnwe Park Streetperrine,
-                        <br />
-                        FL 33157 New York City
-                      </span>
                     </div>
                   </div>
                   <div className="flex gap-5">
@@ -674,12 +498,12 @@ export default function Home() {
                       <BsPhone size={20} />
                     </div>
                     <div>
-                      <h4 className="text-lg font-bold">Chat to us</h4>
+                      <h4 className="text-lg font-bold">Let`s Talk</h4>
                       <p className="text-base text-neutral-800">
                         Mon-Fri from 8am to 5pm.
                       </p>
                       <span className="text-base text-neutral-700 font-semibold cursor-pointer">
-                        +01 (555) 000-0000
+                        +254 111 338 700
                       </span>
                     </div>
                   </div>
@@ -687,7 +511,6 @@ export default function Home() {
                 <div className="w-full h-48 border-2 border-fuchsia-200 p-2 rounded-lg bg-white">
                   <iframe
                     className="h-full w-full border-2"
-                    frameBorder="0"
                     src="https://www.google.com/maps/embed/v1/place?q=Eldoret,+Kenya&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
                   ></iframe>
                 </div>
@@ -697,7 +520,7 @@ export default function Home() {
                   Got Ideas? I've got the skills. Let's team up.
                 </h3>
                 <p className="text-lg mb-6">
-                  Tell us more about yourself and what you're got in mind.
+                  Tell me more about yourself and what you're got in mind.
                 </p>
                 <div className="w-full flex flex-col gap-4">
                   <div className="flex gap-4 sm:flex-row flex-col">

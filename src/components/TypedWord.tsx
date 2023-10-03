@@ -6,7 +6,7 @@ import Typed from 'typed.js'
 
 export default function TypedWord(){
 
-    const typedRef = useRef<Typed>();
+    const typedRef = useRef<typeof Typed>();
 
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
