@@ -1,6 +1,5 @@
 import {
   BsDownload,
-  BsFillBriefcaseFill,
   BsPhone,
   BsPlus,
   BsArrowUpRightCircle,
@@ -8,10 +7,8 @@ import {
   BsCompass,
 } from "react-icons/bs";
 import {
-  FaSkype,
   FaEnvelope,
   FaWhatsapp,
-  FaMap,
   FaFilePdf,
   FaReact,
   FaWordpress,
@@ -22,8 +19,6 @@ import { BsHouseDoor, BsPerson, BsBriefcase, BsColumns, BsTelephone } from 'reac
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
 
-import { HiMenu } from "react-icons/hi";
-import Testimonials from "@/components/Testimonials";
 import TypedWord from "@/components/TypedWord";
 import Menu from "@/components/Menu";
 
@@ -33,7 +28,6 @@ import NavBar from "@/components/NavBar";
 import paulEdited from '../../public/paulEdited.png'
 import jjwelding from '../../public/jjwelding.png'
 import architect from '../../public/architect.png'
-import paulport from '../../public/architect.png'
 
 import Image from "next/image";
 
@@ -100,13 +94,14 @@ export default function Home() {
                 Mbatia
               </h1>
               <h2 className="text-2xl text-neutral-800 font-medium mb-6">
-                <TypedWord />
+                I&apos;m a <TypedWord />
               </h2>
               <p className="text-lg text-neutral-600 font-normal mb-8">
-              I specialize in harnessing the capabilities of React.js and Next.js to build dynamic, responsive, and high-performance web applications
+                I specialize in harnessing the capabilities of React.js and Next.js to build dynamic, responsive, and high-performance web applications
               </p>
               <button className="primary-btn">
-                Download cv <BsDownload className="inline" />
+                <a href="../../public/paul_mbatia.pdf" download className="w-full h-full">Download cv <BsDownload className="inline" />
+                </a>
               </button>
             </div>
           </div>
@@ -137,7 +132,7 @@ export default function Home() {
                   alt="paul Image"
                 />
                 <div className="sm:basis-5/12 basis-full flex flex-col gap-4 w-full">
-                  
+
                   <div className="flex items-center gap-5 bg-white py-3 pl-4 border-2 border-fuchsia-200 rounded-xl w-full hover:bg-fuchsia-200 transition-all duration-300 hover:cursor-pointer">
                     <div className="bg-fuchsia-100 p-2.5 rounded-3xl ">
                       <FaEnvelope size={20} />
@@ -160,7 +155,7 @@ export default function Home() {
                     </div>
                     <span className="font-medium text-neutral-700">Resume</span>
                   </div>
-                  
+
                 </div>
               </div>
               <div>
@@ -455,11 +450,11 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </section>
-        
+
         <section id="contact" className="bg-fuchsia-100">
           <div className="container">
             <div className="flex lg:flex-row flex-col gap-12">
@@ -517,10 +512,10 @@ export default function Home() {
               </div>
               <form className="lg:basis-7/12 basis-full bg-white rounded-xl p-9 border-2 border-fuchsia-200">
                 <h3 className="text-3xl font-medium mb-3">
-                  Got Ideas? I've got the skills. Let's team up.
+                  Got Ideas? I&apos;ve got the skills. Let&apos;s team up.
                 </h3>
                 <p className="text-lg mb-6">
-                  Tell me more about yourself and what you're got in mind.
+                  Tell me more about yourself and what you&apos;re got in mind.
                 </p>
                 <div className="w-full flex flex-col gap-4">
                   <div className="flex gap-4 sm:flex-row flex-col">

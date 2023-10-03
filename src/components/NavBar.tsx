@@ -4,6 +4,8 @@ import React from 'react'
 import useMenu from '@/lib/useMenu'
 import { HiMenu } from 'react-icons/hi'
 
+import Image from 'next/image'
+
 type Props = {}
 
 const NavBar = (props: Props) => {
@@ -21,10 +23,11 @@ const NavBar = (props: Props) => {
     return (
         <div className="w-full bg-fuchsia-100 h-14 lg:hidden block border-b border-fuchsia-200 fixed top-0 z-50">
             <nav className="container w-full flex justify-between px-4 items-center h-full">
-                <a href="#">
-                    <img
+                <a href="#" className='relative'>
+                    <Image
                         src="https://shtheme.com/demosd/tapsiwp/wp-content/themes/tapsi/assets/img/logo.svg"
                         alt="paul logo"
+                        fill
                     />
                 </a>
                 <button className="bg-fuchsia-200 rounded-lg p-[4px] text-2xl" onClick={menuFunc}>

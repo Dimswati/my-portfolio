@@ -10,7 +10,7 @@ export default function TypedWord(){
 
     useEffect(() => {
         const typed = new Typed(typedRef.current, {
-            strings: ["Developer", "Designer"],
+            strings: ["Fronend Developer", "UI/UX Designer"],
             typeSpeed: 80,
             backSpeed: 60,
             loop: true,
@@ -21,7 +21,7 @@ export default function TypedWord(){
 
     return (
         <>
-            I`m a <span ref={typedRef}></span>
+            <span ref={typedRef}></span>
         </>
     )
 }
